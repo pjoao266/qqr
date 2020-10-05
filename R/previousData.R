@@ -1,0 +1,18 @@
+#' Get data from previous years of the brazilian soccer championship
+#'
+#' Number of points, victories, defeats, ties and more info about the brazilian soccer championship of a year from 2015 to 2019
+#' @param year The year of the championship for which the table is desired
+#' @return  A data frame with the information of the brazilian soccer championship from the year desired.
+#' @encoding UTF-8
+#' @import xml2
+#' @import rvest
+#' @import tidyverse
+#' @export
+previousData <- function(year){
+  site <- xml2::read_html(paste0("https://especiais.gazetadopovo.com.br/futebol/tabela-campeonato-brasileiro-" , year))
+  tabela <- site %>% rvest::html_nodes("table") %>% html_table(trim = F, fill = T)
+  tabela <- tabela[[1]]
+  colnames(tabela)[1] = "Posicao"
+  colnames(tabela)[2] = "Time"
+  return(tabela)
+}

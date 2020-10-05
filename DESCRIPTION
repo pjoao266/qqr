@@ -1,0 +1,33 @@
+Package: qqr
+Title: Data from Brazilian Soccer Championship
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Jeferson",
+           family = "Andrade",
+           role = c("aut", "cre"),
+           email = "first.last@example.com"),
+      person(given = "Joao",
+           family = "Melo",
+           role = "aut"),
+      person(given = "Maisa",
+           family = "Andrade",
+           role = "aut"),
+      person(given = "Andre",
+           family = "Kalinovski",
+           role = "aut"))
+Description: Get data about the brazilian soccer championship since 2014.
+License: GPL-2
+Depends: 
+    xml2,
+    rvest,
+    tidyverse,
+    R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Author: Jeferson Andrade [aut, cre],
+  Joao Melo [aut],
+  Maisa Andrade [aut],
+  Andre Kalinovski [aut]
+Maintainer: Jeferson Andrade <jefersonandrafee@gmail.com>
