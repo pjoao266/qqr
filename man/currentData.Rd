@@ -13,3 +13,6 @@ A data frame with the current information of the brazilian soccer championship
 \description{
 Number of points, victories, defeats, ties and more info about the current brazilian soccer championship
 }
+\examples{
+currentData()
+}

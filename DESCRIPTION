@@ -3,18 +3,18 @@ Title: Data from Brazilian Soccer Championship
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Jeferson",
-           family = "Andrade",
-           role = c("aut", "cre"),
-           email = "first.last@example.com"),
+             family = "Andrade",
+             role = c("aut", "cre"),
+             email = "jefersonandrafee@gmail.com"),
       person(given = "Joao",
-           family = "Melo",
-           role = "aut"),
+             family = "Melo",
+             role = "aut"),
       person(given = "Maisa",
-           family = "Andrade",
-           role = "aut"),
+             family = "Andrade",
+             role = "aut"),
       person(given = "Andre",
-           family = "Kalinovski",
-           role = "aut"))
+             family = "Kalinovski",
+             role = "aut"))
 Description: Get data about the brazilian soccer championship since 2014.
 License: GPL-2
 Depends: 
@@ -31,3 +31,7 @@ Author: Jeferson Andrade [aut, cre],
   Maisa Andrade [aut],
   Andre Kalinovski [aut]
 Maintainer: Jeferson Andrade <jefersonandrafee@gmail.com>
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

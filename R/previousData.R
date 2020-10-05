@@ -8,6 +8,8 @@
 #' @import rvest
 #' @import tidyverse
 #' @export
+#' @examples
+#' previousData(2019)
 previousData <- function(year){
   site <- xml2::read_html(paste0("https://especiais.gazetadopovo.com.br/futebol/tabela-campeonato-brasileiro-" , year))
   tabela <- site %>% rvest::html_nodes("table") %>% html_table(trim = F, fill = T)

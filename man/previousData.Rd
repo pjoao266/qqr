@@ -16,3 +16,6 @@ A data frame with the information of the brazilian soccer championship from the 
 \description{
 Number of points, victories, defeats, ties and more info about the brazilian soccer championship of a year from 2015 to 2019
 }
+\examples{
+previousData(2019)
+}

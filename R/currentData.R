@@ -7,6 +7,8 @@
 #' @import rvest
 #' @import tidyverse
 #' @export
+#' @examples
+#' currentData()
 currentData <- function(){
   site <- xml2::read_html("https://brasileirao.cbf.com.br/tabela-times")
   tabela <- site %>% rvest::html_table(fill = TRUE)
